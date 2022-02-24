@@ -266,7 +266,7 @@ async def logger(_, message):
 ## Gban Module
 
 
-@app.on_message(filters.command("gban") & filters.user(SUDOERS))
+@app.on_message(filters.command("mgban") & filters.user(SUDOERS))
 async def ban_globally(_, message):
     if not message.reply_to_message:
         if len(message.command) < 2:
@@ -374,7 +374,7 @@ __**New Global Ban on {MUSIC_BOT_NAME}**__
             return
 
 
-@app.on_message(filters.command("ungban") & filters.user(SUDOERS))
+@app.on_message(filters.command("mungban") & filters.user(SUDOERS))
 async def unban_globally(_, message):
     if not message.reply_to_message:
         if len(message.command) != 2:
