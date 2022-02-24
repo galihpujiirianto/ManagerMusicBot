@@ -78,20 +78,20 @@ async def welcome(_, message: Message):
             return
 
 
-@app.on_message(filters.command(["help", "start"]) & filters.group)
+@app.on_message(filters.command(["mhelp", "bukanstart"]) & filters.group)
 @PermissionCheck
 async def useradd(_, message: Message):
     out = start_pannel()
     await asyncio.gather(
         message.delete(),
         message.reply_text(
-            f"Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\nFor any assistance or help, checkout our support group and channel.",
+            f"Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is now alive!\n\nFor any assistance or help, checkout our support group and channel.",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
 
 
-@app.on_message(filters.command("settings") & filters.group)
+@app.on_message(filters.command("mconfig") & filters.group)
 @PermissionCheck
 async def settings(_, message: Message):
     c_id = message.chat.id
@@ -119,7 +119,7 @@ async def okaybhai(_, CallbackQuery):
     await CallbackQuery.answer("Going Back ...")
     out = start_pannel()
     await CallbackQuery.edit_message_text(
-        text=f"Thanks for having me in {CallbackQuery.message.chat.title}.\n{MUSIC_BOT_NAME}is alive.\n\nFor any assistance or help, checkout our support group and channel.",
+        text=f"Thanks for having me in {CallbackQuery.message.chat.title}.\n{MUSIC_BOT_NAME} is now alive!\n\nFor any assistance or help, checkout our support group and channel.",
         reply_markup=InlineKeyboardMarkup(out[1]),
     )
 
@@ -486,5 +486,5 @@ async def start_markup_check(_, CallbackQuery):
     if command == "DIT":
         diske = psutil.disk_usage("/").percent
         await CallbackQuery.answer(
-            f"Yukki Disk Usage: {diske}%", show_alert=True
+            f"Disk Usage: {diske}%", show_alert=True
         )
