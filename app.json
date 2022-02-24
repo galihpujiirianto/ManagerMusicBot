@@ -1,5 +1,5 @@
 {
-  "name": "Yukki Music Bot",
+  "name": "Yukki Music Bot (forked)",
   "description": "A Telegram Music Bot with proper functions written in Python with Pyrogram and Py-Tgcalls.",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
   "keywords": [
@@ -35,7 +35,7 @@
     },
     "ASSISTANT_PREFIX": {
       "description": "Prefix for Assistant Commands.",
-      "value": ".",
+      "value": "!",
       "required": true
     },
     "MONGO_DB_URI": {
