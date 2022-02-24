@@ -208,7 +208,7 @@ async def set_var(client, message):
             )
 
 
-@app.on_message(filters.command("usage") & filters.user(SUDOERS))
+@app.on_message(filters.command("musage") & filters.user(SUDOERS))
 async def usage_dynos(client, message):
     ### Credits CatUserbot
     if await is_heroku():
