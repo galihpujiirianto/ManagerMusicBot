@@ -17,7 +17,7 @@ else:
     ASS_CLI_1 = Client(
         api_id=API_ID,
         api_hash=API_HASH,
-        session_name=STRING1,
+        session_string=STRING1,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -28,7 +28,7 @@ else:
     ASS_CLI_2 = Client(
         api_id=API_ID,
         api_hash=API_HASH,
-        session_name=STRING2,
+        session_string=STRING2,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -39,7 +39,7 @@ else:
     ASS_CLI_3 = Client(
         api_id=API_ID,
         api_hash=API_HASH,
-        session_name=STRING3,
+        session_string=STRING3,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -50,7 +50,7 @@ else:
     ASS_CLI_4 = Client(
         api_id=API_ID,
         api_hash=API_HASH,
-        session_name=STRING4,
+        session_string=STRING4,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -61,7 +61,7 @@ else:
     ASS_CLI_5 = Client(
         api_id=API_ID,
         api_hash=API_HASH,
-        session_name=STRING5,
+        session_string=STRING5,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
