@@ -15,10 +15,10 @@ if not STRING1:
     ASS_CLI_1 = None
 else:
     ASS_CLI_1 = Client(
-        name="Assistant 1",
+        "Assistant 1",
         api_id=API_ID,
         api_hash=API_HASH,
-        session_string=STRING1,
+        session_name=STRING1,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -27,10 +27,10 @@ if not STRING2:
     ASS_CLI_2 = None
 else:
     ASS_CLI_2 = Client(
-        name="Assistant 2",
+        "Assistant 2",
         api_id=API_ID,
         api_hash=API_HASH,
-        session_string=STRING2,
+        session_name=STRING2,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -39,10 +39,10 @@ if not STRING3:
     ASS_CLI_3 = None
 else:
     ASS_CLI_3 = Client(
-        name="Assistant 3",
+        "Assistant 3",
         api_id=API_ID,
         api_hash=API_HASH,
-        session_string=STRING3,
+        session_name=STRING3,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -51,10 +51,10 @@ if not STRING4:
     ASS_CLI_4 = None
 else:
     ASS_CLI_4 = Client(
-        name="Assistant 4",
+        "Assistant 4",
         api_id=API_ID,
         api_hash=API_HASH,
-        session_string=STRING4,
+        session_name=STRING4,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
@@ -63,10 +63,10 @@ if not STRING5:
     ASS_CLI_5 = None
 else:
     ASS_CLI_5 = Client(
-        name="Assistant 5",
+        "Assistant 5",
         api_id=API_ID,
         api_hash=API_HASH,
-        session_string=STRING5,
+        session_name=STRING5,
         plugins=dict(root="Yukki.Plugins.Multi-Assistant"),
     )
 
