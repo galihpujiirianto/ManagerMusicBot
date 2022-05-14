@@ -15,7 +15,6 @@ if not STRING1:
     ASS_CLI_1 = None
 else:
     ASS_CLI_1 = Client(
-        "Assistant 1",
         api_id=API_ID,
         api_hash=API_HASH,
         session_name=STRING1,
@@ -27,7 +26,6 @@ if not STRING2:
     ASS_CLI_2 = None
 else:
     ASS_CLI_2 = Client(
-        "Assistant 2",
         api_id=API_ID,
         api_hash=API_HASH,
         session_name=STRING2,
@@ -39,7 +37,6 @@ if not STRING3:
     ASS_CLI_3 = None
 else:
     ASS_CLI_3 = Client(
-        "Assistant 3",
         api_id=API_ID,
         api_hash=API_HASH,
         session_name=STRING3,
@@ -51,7 +48,6 @@ if not STRING4:
     ASS_CLI_4 = None
 else:
     ASS_CLI_4 = Client(
-        "Assistant 4",
         api_id=API_ID,
         api_hash=API_HASH,
         session_name=STRING4,
@@ -63,7 +59,6 @@ if not STRING5:
     ASS_CLI_5 = None
 else:
     ASS_CLI_5 = Client(
-        "Assistant 5",
         api_id=API_ID,
         api_hash=API_HASH,
         session_name=STRING5,
